@@ -10,15 +10,11 @@ import java.time.LocalDateTime;
 import java.time.ZoneId;
 import java.util.Date;
 import org.apache.commons.lang3.StringUtils;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
 
 
-@Component
 public class TokenFactory {
 
 
-  @Autowired
   private TokenProperties properties;
 
   public TokenFactory() {

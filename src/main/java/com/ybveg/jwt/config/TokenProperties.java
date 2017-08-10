@@ -1,13 +1,11 @@
 package com.ybveg.jwt.config;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
-import org.springframework.context.annotation.Configuration;
 
 /**
  * @auther zbb
  * @create 2017/8/9
  */
-@Configuration
 @ConfigurationProperties("spring.token")
 public class TokenProperties {
 
@@ -25,9 +23,7 @@ public class TokenProperties {
   private String secert;
 
   /**
-   * token 可用时间
-   * 超过可用时间 会自动刷新token
-   * 一般有效时间的一半
+   * token 可用时间 超过可用时间 会自动刷新token 一般有效时间的一半
    */
   private int refreshExpire;
 

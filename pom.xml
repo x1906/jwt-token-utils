@@ -88,4 +88,19 @@
       <artifactId>slf4j-api</artifactId>
     </dependency>
   </dependencies>
+
+  <!-- maven部署仓库配置 -->
+  <distributionManagement>
+    <repository>
+      <id>yuanben-release</id>
+      <name>Yuanben Release</name>
+      <url>http://nexus.ybveg.com/repository/Yuanben-Release/</url>
+    </repository>
+    <snapshotRepository>
+      <id>yuanben-snapshot</id>
+      <name>Yuanben Snapshot</name>
+      <url>http://nexus.ybveg.com/repository/Yuanben-Snapshot/</url>
+    </snapshotRepository>
+  </distributionManagement>
+
 </project>
