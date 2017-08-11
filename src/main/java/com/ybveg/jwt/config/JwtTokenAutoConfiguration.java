@@ -18,7 +18,7 @@ public class JwtTokenAutoConfiguration {
   private TokenProperties properties;
 
   @Bean
-  public TokenFactory initToken() {
+  public TokenFactory initTokenFactory() {
     return new TokenFactory(properties);
   }
 }
